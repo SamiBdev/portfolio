@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sami Benamar Portfolio">
+    <link rel="icon" href="/img/icon3.png" type="image/png">
+    <title>Sami Benamar</title>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="Sami Benamar"/>
+    <meta name="twitter:creator" content="Sami Benamar"/>
+    <meta property="og:title" content="<?= App::getInstance()->title; ?>" />
+    <meta property="og:description" content="Sami Benamar Description"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?= App::getUrl(); ?>" />
+    <meta property="og:site_name" content="<?= App::getInstance()->title; ?>" />
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/index.js" defer></script>
+
+    <link rel='stylesheet' href='/css/home.css'>
+    <script src='/js/home.js' defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <ul>
+          <li class='nav-item'><a class='nav-link active' href='/' aria-label='Stories'>Stories</a></li>
+          <li class='nav-item'><a class='nav-link' href='/works' aria-label='Works'>Works</a>
+          <li class='nav-item'><a class='nav-link' href='/contacts' aria-label='Contacts'>Contacts</a></li>
+        </ul>
+        <div class="nav-right">
+          Sami Benamar
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sec-home">
+        <div class="foreground-home">
+          <div class="top-sec-home">
+            <div data-aos="fade-right">
+              <h1 class="title-home">Sami<br>Benamar</h1>
+              <h3 class="subtitle-home">Student engineer in computer science</h3>
+            </div>
+            <div class="image-home" data-aos="fade-left">
+              <img src="/img/home/developer_activity.svg" alt="Developper Activity" id="parallax" data-value="10">
+            </div>
+          </div>
+          <div class="bottom-sec-home">
+            <a class="btn-show" href="#aboutme" data-aos="zoom-in">Show more</a>
+          </div>
+        </div>
+        <div class="background-home">
+          <div class="background-home-part">
+            <div class="circle" style="max-width: 100%;">
+              <div class="circle-back bg-secondary"></div>
+              <div class="circle-front bg-secondary"></div>
+            </div>
+            <div class="circle" style="max-width: 80%;">
+              <div class="circle-back bg-thirdary"></div>
+              <div class="circle-front bg-thirdary"></div>
+            </div>
+            <div class="circle" style="max-width: 55%;">
+              <div class="circle-back bg-secondary"></div>
+              <div class="circle-front bg-secondary"></div>
+            </div>
+            <div class="circle" style="max-width: 30%;">
+              <div class="circle-back bg-fourdary"></div>
+              <div class="circle-front bg-fourdary"></div>
+            </div>
+          </div>
+          <div class="background-home-part-reverse">
+            <div class="circle" style="max-width: 32%;">
+              <div class="circle-front-reverse bg-fourdary"></div>
+              <div class="circle-back bg-fourdary"></div>
+            </div>
+            <div class="circle" style="max-width: 42%;">
+              <div class="circle-front-reverse bg-secondary"></div>
+              <div class="circle-back bg-secondary"></div>
+            </div>
+            <div class="circle" style="max-width: 55%;">
+              <div class="circle-front-reverse bg-secondary"></div>
+              <div class="circle-back bg-secondary"></div>
+            </div>
+            <div class="circle" style="max-width: 90%;">
+              <div class="circle-front-reverse bg-thirdary"></div>
+              <div class="circle-back bg-thirdary"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-full container-skills" id="aboutme">
+        <div class="div-title">
+          <h2 class="title">About me</h2>
+        </div>
+        <div class="aboutme-container">
+          <div class="aboutme-left">
+            <p class="aboutme-p">
+              My name is Sami Benamar, studying in a computer engineering school, I am interested in software development and engineering. I would like to get experience in the phases and methodologies of the development process. I am enthusiatic about technology products that deliver new solutions.
+            </p>
+          </div>
+          <div class="aboutme-right">
+            <img class="aboutme-img" src="/img/home/profile.svg" alt="About me">
+          </div>
+        </div>
+      </section>
+      <section class="sec-full container-skills" id="skills">
+        <div class="div-title">
+          <h2 class="title">Skills</h2>
+        </div>
+        <div class="progress-container">
+          <div class="progress">
+             <div class="title-progress">
+               <h3>HTML / CSS</h3>
+             </div>
+             <div class="barline">
+               <div class="countbar" data-percentNumber="95"></div>
+             </div>
+           </div>
+           <div class="progress">
+              <div class="title-progress">
+                <h3>PHP</h3>
+              </div>
+              <div class="barline">
+                <div class="countbar" data-percentNumber="90"></div>
+              </div>
+            </div>
+            <div class="progress">
+               <div class="title-progress">
+                 <h3>Javascript / NodeJS</h3>
+               </div>
+               <div class="barline">
+                 <div class="countbar" data-percentNumber="85"></div>
+               </div>
+             </div>
+            <div class="progress">
+              <div class="title-progress">
+                <h3>C++ / C#</h3>
+              </div>
+              <div class="barline">
+                <div class="countbar" data-percentNumber="55"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title-progress">
+                <h3>MySQL</h3>
+              </div>
+              <div class="barline">
+                <div class="countbar" data-percentNumber="80"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title-progress">
+                <h3>Python</h3>
+              </div>
+              <div class="barline">
+                <div class="countbar" data-percentNumber="87"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title-progress">
+                <h3>Programmation Universal Robot</h3>
+              </div>
+              <div class="barline">
+                <div class="countbar" data-percentNumber="75"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title-progress">
+                <h3>Industrial Camera Sensopart</h3>
+              </div>
+              <div class="barline">
+                <div class="countbar" data-percentNumber="65"></div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="sec-full" id="education">
+        <div class="container-timeline">
+          <h2 class="title">Education</h2>
+          <div class="timeline">
+            <div class="container left">
+              <div class="content" data-aos="fade-right">
+                <h2 class="title-timeline">CESI School of Engineering Strasbourg</h2>
+                <h3 class="subtitle-timeline">Apprenticeship 2021-2024</h3>
+                <p class="p-timeline">
+                  •  Engineering training in the field of computer science.<br>
+                  •  Apprenticeship in the company B&S Robsim.
+                </p>
+              </div>
+            </div>
+
+            <div class="container right">
+              <div class="content" data-aos="fade-left">
+                <h2 class="title-timeline">CESI School of Engineering Strasbourg</h2>
+                <h3 class="subtitle-timeline">Integrated preparation 2019-2021</h3>
+                <p class="p-timeline">
+                  •  Engineer training in the field of computer science.<br>
+                  •  President of the Bureau Des Sports association.
+                </p>
+              </div>
+            </div>
+
+            <div class="container left">
+              <div class="content" data-aos="fade-right">
+                <h2 class="title-timeline">High School Heinrich-Nessel</h2>
+                <h3 class="subtitle-timeline">2016-2019</h3>
+                <p class="p-timeline">
+                  •  Scientific baccalaureate, engineering science option mathematics speciality, European section English. Mention Bien.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>

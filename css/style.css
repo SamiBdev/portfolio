@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #222a36;
+  --secondary-color: #1c232e;
+  --thirdary-color: #676cdb;
+  --fourdary-color: #3aafc9;
+  --grey-color: #7c8188;
+  --white-color: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+header{
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-color{
+  background-color: var(--secondary-color);
+  transition: background-color 200ms linear;
+}
+
+.navbar{
+  height: 100%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+}
+
+.nav-item{
+  list-style: none;
+  margin-right: 2em;
+}
+
+.nav-link{
+  font-family: "Roboto-Regular";
+  text-decoration: none;
+  color: var(--grey-color);
+  letter-spacing: 0.1em;
+  transition: 0.2s;
+}
+
+.nav-link.active{
+  color: var(--white-color);
+}
+
+.nav-link::after{
+  content: '';
+  margin-left: 3px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--grey-color);
+}
+
+.nav-link.active::after{
+  content: '';
+  margin-left: 3px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--fourdary-color);
+}
+
+.nav-link:hover{
+  color: var(--white-color);
+}
+
+.nav-right{
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+
+.title{
+  color: var(--white-color);
+  font-family: "Roboto-Bold";
+  font-size: 3em;
+  margin-bottom: 35px;
+}
+
+.title::after{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: var(--fourdary-color);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/fonts/Roboto-Black.ttf") format("truetype");
+}
+
+
+@media only screen and (max-width : 1200px) {
+  .navbar{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (max-width : 970px) {
+  .nav-right{
+    display: none;
+  }
+
+  .navbar{
+    justify-content: center;
+  }
+}
