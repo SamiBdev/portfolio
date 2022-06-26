@@ -61,6 +61,16 @@ html {
   z-index: 10;
 }
 
+.link-download{
+  background-color: var(--thirdary-color);
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "Roboto-Regular";
+}
+
+
 .background-home{
   position: absolute;
   display: flex;
