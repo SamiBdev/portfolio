@@ -221,16 +221,16 @@
   .thirdary-color{
     color:var(--thirdary-color);
   }
+
+  .yt-iframe{
+    width: 560px;
+    height: 315px;
+  }
   
   @media only screen and (max-width : 1200px) {
     .container-works{
       max-width: 100%;
       overflow: hidden;
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-  
-    .title{
       padding-left: 25px;
       padding-right: 25px;
     }
@@ -247,8 +247,14 @@
     }
   
     .title{
+      font-size: 2.5em;
       padding-left: 25px;
       padding-right: 25px;
+    }
+
+    .yt-iframe{
+      width: 300px;
+      height: 168px;
     }
   
     .container-timeline{
@@ -260,6 +266,15 @@
       padding-left: 0px;
       padding-right: 0px;
     }
+
+    .flex{
+      display: flex;
+      flex-direction: column;
+      font-family: "Roboto-Regular";
+      color: var(--white-color);
+      line-height: 1.5em;
+    }
+  
   
     .card-projet{
       flex-direction: column;
@@ -279,6 +294,11 @@
     .title-card{
       margin-top: 10px;
     }
+
+    .mt-mb{
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
   
     .card-left-reverse{
       width: 100%;
@@ -295,6 +315,17 @@
       display: flex;
       flex-direction: column-reverse;
     }
+
+    .div-title{
+      margin-top: 70px;
+    }
+
+    .container-projects{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
