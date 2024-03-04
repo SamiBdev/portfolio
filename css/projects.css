@@ -1,0 +1,332 @@
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--thirdary-color);
+    border: 4px solid var(--thirdary-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.2s;
+  }
+  
+  .container:hover:after{
+    background-color: var(--fourdary-color);
+    border: 4px solid var(--fourdary-color)
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+    box-sizing: border-box;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--secondary-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--secondary-color);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--secondary-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+  }
+  
+  .sec-full{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+  }
+  
+  .title-timeline{
+    color: var(--fourdary-color);
+    font-family: "Roboto-Regular";
+  }
+  
+  .subtitle-timeline{
+    color: var(--white-color);
+    font-family: "Roboto-Regular";
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .p-timeline{
+    color: var(--grey-color);
+    font-family: "Roboto-Regular";
+  }
+  
+  .container-timeline{
+    max-width: 1300px;
+    width: 1300px;
+    margin: auto;
+  }
+  
+  .container-works{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .div-title{
+    width: 100%;
+  }
+  
+  .card-projet{
+    display: flex;
+    margin-bottom: 80px;
+  }
+  
+  .card-left{
+    width: 60%;
+  }
+  
+  .card-right{
+    width: 35%;
+    margin-left: 5%;
+  }
+  
+  .card-left-reverse{
+    width: 35%;
+    margin-right: 5%;
+  }
+  
+  .card-right-reverse{
+    width: 60%;
+  }
+  
+  .card-img{
+    max-width: 100%;
+  }
+  
+  .title-card{
+    font-family: "Roboto-Bold";
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--fourdary-color);
+    letter-spacing: 0.05em;
+  }
+  
+  .desc-card{
+    margin-top: 25px;
+    font-family: "Roboto-Regular";
+    color: var(--white-color);
+    line-height: 1.5em;
+    margin-bottom: 25px;
+  }
+  
+  .link-site{
+    background-color: var(--thirdary-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Roboto-Regular";
+  }
+
+  .flex{
+    display: flex;
+    font-family: "Roboto-Regular";
+    color: var(--white-color);
+    line-height: 1.5em;
+  }
+
+  .text-top-project{
+    margin-bottom: 25px;
+  }
+
+  .pr-left{
+    margin-right: 15px;
+  }
+
+  .pr-p-text{
+    font-family: "Roboto-Regular";
+    color: var(--white-color);
+    line-height: 1.5em;
+  }
+
+  .mt-mb{
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+
+  .thirdary-color{
+    color:var(--thirdary-color);
+  }
+  
+  @media only screen and (max-width : 1200px) {
+    .container-works{
+      max-width: 100%;
+      overflow: hidden;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .title{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .container-timeline{
+      margin-top: 100px;
+    }
+  }
+  
+  @media only screen and (max-width : 970px) {
+    .sec-full{
+      max-width: 100%;
+      overflow: hidden;
+    }
+  
+    .title{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .container-timeline{
+      margin-top: 70px;
+    }
+  
+    .container-works{
+      padding-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+    .card-projet{
+      flex-direction: column;
+    }
+  
+    .card-left{
+      width: 100%;
+    }
+  
+    .card-right{
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 0;
+    }
+  
+    .title-card{
+      margin-top: 10px;
+    }
+  
+    .card-left-reverse{
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-right: 0;
+    }
+  
+    .card-right-reverse{
+      width: 100%;
+    }
+  
+    .card-projet-reverse{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid var(--secondary-color);
+      border-width: 10px 10px 10px 0;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  
+  }
+  
