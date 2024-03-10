@@ -227,6 +227,26 @@
     height: 315px;
   }
   
+  .img-project{
+    width: 100%;
+  }
+
+  .img-size-div{
+    width: 50%;
+  }
+
+  .text-size-div{
+    width: 50%;
+  }
+
+  .pr-right-img{
+    margin-left: 15px;
+  }
+
+  .pr-marg-bottom{
+    margin-bottom: 30px;
+  }
+
   @media only screen and (max-width : 1200px) {
     .container-works{
       max-width: 100%;
